@@ -1,0 +1,12 @@
+version: "3"
+services:
+  pariba:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      FLASK_ENV: "development"
+    volumes:
+      - .:/app
+    entrypoint: flask
+    command: run -h 0.0.0.0 -p 80

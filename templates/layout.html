@@ -1,13 +1,18 @@
-{# _myapp/templates/layout.html_ #}
+{# pariba/templates/layout.html_ #}
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>{% block title %}{% endblock %}</title>
+        <link href="/static/css/default.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/homepge.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/line-awesome.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     {% block body %}
-        <h1>This heading is defined in the parent.</h1>
+        <h1>Pariba</h1>
     {% endblock %}
+    <script src="/static/js/upload.js" type="text/javascript">
+	</script>
     </body>
 </html>

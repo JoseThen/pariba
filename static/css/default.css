@@ -1,0 +1,33 @@
+@font-face {
+  font-family: roboto;
+  src: "static/fonts/Roboto/Roboto-Regular.ttf";
+}
+
+@font-face {
+  font-family: opensans;
+  src: "static/fonts/Open_Sans/OpenSans-Regular.ttf";
+}
+
+html {
+  font-family: "roboto";
+  background: rgb(166, 158, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 158, 242, 1) 29%,
+    rgba(118, 159, 251, 1) 68%,
+    rgba(122, 202, 255, 1) 100%
+  );
+  letter-spacing: 1px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.emph {
+  font-weight: 800;
+  color: #099ff4;
+}

@@ -1,8 +1,22 @@
-{# _myapp/templates/index.html_ #}
+{# pariba/templates/index.html_ #}
 
 {% extends "layout.html" %}
-{% block title %}Hello world!{% endblock %}
+{% block title %}Upload Pariba{% endblock %}
 {% block body %}
     {{ super() }}
-    <h2>This heading is defined in the child.</h2>
+    <div class="main-holder shadow">
+        <h3>FILE UPLOADER</h3>
+        <div id="drop-area">
+            <form class="my-form">
+                <p><i class="upload-icon"></i> <span class="emph">Add file</span> or drop files here</p>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <!-- <label class="button" for="fileElem">Add here</label> -->
+            </form>
+        </div>
+        <div class="files" id="files">
+            <div id="gallery"></div>
+            <p id="file-name"></p>
+            <progress id="progress-bar" max=100 value=40></progress>
+        </div>
+    </div>
 {% endblock %}
