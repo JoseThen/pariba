@@ -2,14 +2,18 @@
   /* border: solid 1px; */
   border-radius: 10px;
   height: 500px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   background: #fcfeff;
 }
 
+h3 {
+  color: #dbdede;
+}
+
 #drop-area {
   color: #cccccc;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 10px;
   width: 80%;
   font-family: roboto;
@@ -80,4 +84,13 @@ p {
 #progress-bar::-webkit-progress-value,
 #progress-bar::-moz-progress-bar {
   background: #3edf82;
+}
+
+.filename {
+  color: #4e555a;
+  margin-left: 8%;
+}
+
+.filesize {
+  color: #dbdede;
 }

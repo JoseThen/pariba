@@ -85,11 +85,17 @@ function previewFile(file) {
   reader.readAsDataURL(file);
   reader.onloadend = function() {
     let fileName = document.createElement("p");
-    let fileSize = document.createElement("p");
+    fileName.classList.add("filename");
     fileName.textContent = file.name;
+    let fileSize = document.createElement("p");
+    fileSize.classList.add("filesize");
     fileSize.textContent = bytesToSize(file.size);
-    document.getElementById("files").appendChild(fileName);
-    document.getElementById("files").appendChild(fileSize);
+    let holder = document.createElement("div");
+    holder.classList.add("thefile");
+    holder.appendChild(fileName);
+    holder.appendChild(fileSize);
+    document.getElementById("files").appendChild(holder);
+    // document.getElementById("files").appendChild(fileSize);
   };
 }
 
